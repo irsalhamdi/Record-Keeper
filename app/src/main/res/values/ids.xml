@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_view_distance" type="id" />
+    <item name="text_view_distance_2" type="id" />
+    <item name="text_view_distance_3" type="id" />
+</resources>
