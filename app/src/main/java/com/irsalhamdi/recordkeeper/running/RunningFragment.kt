@@ -1,11 +1,12 @@
 package com.irsalhamdi.recordkeeper.running
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.content.Intent
+import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
+import android.content.Context.MODE_PRIVATE
 import com.irsalhamdi.recordkeeper.databinding.FragmentRunningBinding
 
 class RunningFragment: Fragment() {
@@ -24,6 +25,22 @@ class RunningFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupOnClickListener()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        displayRecords()
+    }
+
+    private fun displayRecords() {
+        val runningPreferences = requireContext().getSharedPreferences("running", MODE_PRIVATE)
+
+        binding.textViewTime10km.text = runningPreferences.getString("10 KM record", null)
+        binding.textViewDate10km.text = runningPreferences.getString("10 KM date", null)
+        binding.textViewTime5km.text = runningPreferences.getString("5 KM record", null)
+        binding.textViewDate5km.text = runningPreferences.getString("5 KM date", null)
+        binding.textViewTime2km.text = runningPreferences.getString("2 KM record", null)
+        binding.textViewDate2km.text = runningPreferences.getString("2 KM date", null)
     }
 
     private fun setupOnClickListener() {

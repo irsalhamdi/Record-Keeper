@@ -1,7 +1,7 @@
 package com.irsalhamdi.recordkeeper.running
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import androidx.core.content.edit
 import androidx.appcompat.app.AppCompatActivity
 import com.irsalhamdi.recordkeeper.databinding.ActivityEditRunningRecordBinding
 
@@ -11,7 +11,6 @@ class EditRunningRecordActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
         binding = ActivityEditRunningRecordBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -19,5 +18,44 @@ class EditRunningRecordActivity : AppCompatActivity() {
         val distance = intent.getStringExtra("Distance")
 
         title = "$distance Record"
+
+        displayRecord(distance)
+
+        binding.buttonSave.setOnClickListener {
+            saveRecord(distance)
+            finish()
+        }
+
+        binding.buttonClear.setOnClickListener {
+            clearRecord(distance)
+        }
+    }
+
+    private fun displayRecord(distance: String?) {
+        val runningPreferences = getSharedPreferences("running", MODE_PRIVATE)
+
+        binding.editTextRecord.setText(runningPreferences.getString("$distance record", null))
+        binding.editTextDate.setText(runningPreferences.getString("$distance date", null))
+    }
+
+    private fun saveRecord(distance: String?) {
+        val record = binding.editTextRecord.text.toString()
+        val date = binding.editTextDate.text.toString()
+
+        val runningPreferences = getSharedPreferences("running", MODE_PRIVATE)
+
+        runningPreferences.edit {
+            putString("$distance record", record)
+            putString("$distance date", date)
+        }
+    }
+
+    private fun clearRecord(distance: String?) {
+        val runningPreferences = getSharedPreferences("running", MODE_PRIVATE)
+
+        runningPreferences.edit {
+            remove("$distance record")
+            remove("$distance date")
+        }
     }
 }
