@@ -1,11 +1,12 @@
-package com.irsalhamdi.recordkeeper
+package com.irsalhamdi.recordkeeper.running
 
-import android.os.Bundle
-import android.view.View
 import android.content.Intent
-import android.view.ViewGroup
+import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.irsalhamdi.recordkeeper.running.EditRunningRecordActivity
 import com.irsalhamdi.recordkeeper.databinding.FragmentRunningBinding
 
 class RunningFragment: Fragment() {

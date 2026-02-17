@@ -1,4 +1,4 @@
-package com.irsalhamdi.recordkeeper
+package com.irsalhamdi.recordkeeper.cycling
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
