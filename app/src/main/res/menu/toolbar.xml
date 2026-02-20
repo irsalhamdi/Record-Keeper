@@ -2,12 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/reset_running"
-        android:title="@string/running"
+        android:title="@string/item_reset_running"
         android:icon="@drawable/ic_running_24"/>
 
     <item
         android:id="@+id/reset_bike"
-        android:title="@string/cycling"
+        android:title="@string/item_reset_cycling"
+        android:icon="@drawable/ic_bike_24"/>
+
+    <item
+        android:id="@+id/reset_all"
+        android:title="@string/item_reset_all"
         android:icon="@drawable/ic_bike_24"/>
 
 </menu>

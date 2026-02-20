@@ -72,4 +72,7 @@
     <string name="button_save">Save</string>
     <string name="button_delete">Delete</string>
     <string name="text_view_longest_ride">Longest Ride</string>
+    <string name="item_reset_running">Reset Running</string>
+    <string name="item_reset_cycling">Reset Cycling</string>
+    <string name="item_reset_all">Reset All</string>
 </resources>

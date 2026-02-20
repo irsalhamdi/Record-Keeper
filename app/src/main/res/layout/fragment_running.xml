@@ -67,9 +67,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/text_view_distance"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="?attr/colorPrimary"/>
+                    style="@style/RecordNameTextApperance"/>
 
                 <TextView
                     android:id="@+id/text_view_time_10km"
@@ -78,9 +76,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/text_view_time"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"/>
+                    style="@style/RecordValueTextApperance"/>
 
                 <TextView
                     android:id="@+id/text_view_date_10km"
@@ -89,8 +85,7 @@
                     app:layout_constraintTop_toBottomOf="@id/text_view_time_10km"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/text_view_date"
-                    android:textSize="16sp"
-                    android:fontFamily="sans-serif-light"
+                    style="@style/RecordDateTextApperance"
                     android:layout_marginTop="16dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -115,9 +110,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/text_view_distance_2"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="?attr/colorPrimary"/>
+                    style="@style/RecordNameTextApperance"/>
 
                 <TextView
                     android:id="@+id/text_view_time_5km"
@@ -126,9 +119,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/text_view_time_2"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"/>
+                    style="@style/RecordValueTextApperance"/>
 
                 <TextView
                     android:id="@+id/text_view_date_5km"
@@ -137,8 +128,7 @@
                     app:layout_constraintTop_toBottomOf="@id/text_view_time_5km"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/text_view_date_2"
-                    android:textSize="16sp"
-                    android:fontFamily="sans-serif-light"
+                    style="@style/RecordDateTextApperance"
                     android:layout_marginTop="16dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -163,9 +153,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/text_view_distance_3"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif"
-                    android:textColor="?attr/colorPrimary"/>
+                    style="@style/RecordNameTextApperance"/>
 
                 <TextView
                     android:id="@+id/text_view_time_2km"
@@ -174,9 +162,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/text_view_time_3"
-                    android:textSize="20sp"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/dark_grey"/>
+                    style="@style/RecordValueTextApperance"/>
 
                 <TextView
                     android:id="@+id/text_view_date_2km"
@@ -185,8 +171,7 @@
                     app:layout_constraintTop_toBottomOf="@id/text_view_time_2km"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/text_view_date_3"
-                    android:textSize="16sp"
-                    android:fontFamily="sans-serif-light"
+                    style="@style/RecordDateTextApperance"
                     android:layout_marginTop="16dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>

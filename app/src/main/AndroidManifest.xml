@@ -11,19 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecordKeeper" >
         <activity
-            android:name=".cycling.EditCyclingActivity"
+            android:name=".editrecord.EditRecordActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.RecordKeeper.WithActionBar"/>
-        <activity
-            android:name=".running.EditRunningRecordActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.RecordKeeper.WithActionBar" />
+            android:theme="@style/Base.Theme.RecordKeeper" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.RecordKeeper.WithActionBar">
+            android:theme="@style/Base.Theme.RecordKeeper">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -2,10 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.RecordKeeper" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_800</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnBackground">@color/white</item>
     </style>
 
-    <style name="Theme.RecordKeeper.WithActionBar" parent="Theme.Material3.DayNight">
-        <!-- Customize theme with action bar here -->
-    </style>
+<!--    <style name="Theme.RecordKeeper.WithActionBar" parent="Theme.Material3.DayNight">-->
+<!--        &lt;!&ndash; Customize theme with action bar here &ndash;&gt;-->
+<!--    </style>-->
 </resources>
